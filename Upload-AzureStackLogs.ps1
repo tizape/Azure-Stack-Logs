@@ -1,14 +1,15 @@
-param(
+param
+(
     [Parameter (Mandatory= $true)]
-	[String]$SourceDirectory,
+    [String]$SourceDirectory,
     [Parameter (Mandatory= $true)]
     [String]$TargetBlobURL,
     [Parameter (Mandatory= $false)]
     [ValidateRange(1,32)]
     [int]$SetBandwidth = "24",
     [Parameter (Mandatory= $true)]
-	[String]$AzCopyLogDirectory
-	)
+    [String]$AzCopyLogDirectory
+)
 
 
     
